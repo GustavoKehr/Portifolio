@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Portifolio</title>
+</head>
+<body onresize="changeSize()">
+    <!-- header section -->
+    <header class="header">
+        <a href="#" class="logo">Gustavo.</a>
+        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </menu>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span class="me">Gustavo Kehr</span></h1>
+            <div class="text-animate">
+                <h3>Full-Stack Developer</h3>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo accusantium iusto inventore, qui nesciunt quis quae doloribus ipsam. Quaerat ea non quibusdam rerum dolor? Modi a numquam rem nihil ratione.</p>
+            <div class="btn-box">
+                <a href="#" class="btn">Hire Me</a>
+                <a href="#" class="btn">Let's Talk</a>
+            </div>
+            <div class="home-sci">
+                <a href="#" class="bx bxl-github"></a>
+                <a href="#" class="bx bxl-instagram"></a>
+                <a href="#" class="bx bxl-linkedin"></a>
+                <a href="#" class="bx bxl-gmail"></a>
+            </div>
+            <div class="home-imgHover"></div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span class="me">Me</span></h2>
+        <div class="about-img">
+            <img src="images/ei.jpg" alt="photo-me">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Full-Stack Developer!</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet obcaecati deleniti debitis praesentium quibusdam inventore soluta commodi minus, autem expedita, voluptatem dolor nobis nisi necessitatibus omnis. Officia quae voluptatum blanditiis?</p>
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- education section -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span class="me">Journey</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year">
+                                <i class='bx bx-calendar'></i>2022 - 2023
+                            </div>  
+                                <h3> Certificate in Back-End Developer at <em>SENAI</em> <a href="certificates/certificateSENAI-BackEnd-Developer.PDF" target="_blank">(Certificate)</a>
+                                </h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque voluptate laudantium quidem deleniti odit, officia quo nemo doloremque magni cumque. Iste quo excepturi nesciunt mollitia? Doloribus iste explicabo a.</p>
+                                
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year">
+                                <i class='bx bx-calendar'></i>2023 - 2023
+                            </div>
+                                <h3>
+                                    Certificate in JavaScript at Curso em Video <a href="certificates/certificateJAVASCRIPT.pdf" target="_blank">(Certificate)</a>
+                                </h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam eius perferendis sequi ducimus! Exercitationem sequi ratione id beatae corporis error voluptatem omnis ducimus aliquam architecto, incidunt natus, optio distinctio. Fugit.</p>
+                                
+                                <h3>
+                                    Certificate in HTML 5 and CSS 3 at Curso em Video <a href="certificates/certificateHTML-CSS.pdf" target="_blank">(Certificate)</a>
+                                </h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione amet aliquam enim suscipit, illum soluta earum consequuntur eligendi deserunt officiis, inventore quo sunt accusantium dolorem illo architecto sint nemo eos.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year">
+                                <i class='bx bx-calendar'></i>2023 - 2025
+                            </div>
+                                <h3>Master Degree - University at 
+                                    <em>Universidade Braz Cubas</em> (In progress)</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa neque voluptate laudantium quidem deleniti odit, officia quo nemo doloremque magni cumque. Iste quo excepturi nesciunt mollitia? Doloribus iste explicabo a.</p>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span class="me">Skills</span></h2>
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML 5 <span class="me">Intermediary - Advanced</span></h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>CSS 3 <span class="me">Basic - Intermediary</span></h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>JavaScript <span class="me">Basic - Intermediary</span></h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Python <span class="me">Basic</span></h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>C# | .Net<span class="me">Basic</span></h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>C<span class="me">Basic</span></h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>PHP<span class="me">Basic</span></h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Rest API <span class="me">Baisc</span></h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <h3 class="title">Data Base Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>SQL Server <span class="me">Basic</span></h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <h3 class="title">Personal Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Focus on result </h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Work well in team</h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Good communication</h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Multitasking</h3>
+                            <div class="bar"><span class="me"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="about" id="contact">
+        <h2 class="heading">Contact <span class="me">Me!</span></h2>
+        <div class="about-img">
+            <img src="images/ei.jpg" alt="photo-me">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Full-Stack Developer!</h3>
+            <p class="contact">
+                <span class="material-symbols-outlined">
+                Phone 
+                </span>
+                + 55 (11) 99716-4041
+            </p>
+            <p class="contact">
+                <span class="material-symbols-outlined">
+                    email
+                </span>
+                <a href="mailto:guckehr008@gmail.com" target="_blank">guckehr008@gmail.com</a>
+            </p>
+            <p class="contact">
+                <span class="bx bxl-linkedin-square"></span>
+                <a href="https://www.linkedin.com/in/gustavokehr/" target="_blank">GustavoKehr</a>
+            </p>
+            <p class="contact">
+                <span class="bx bxl-github"></span>
+                <a href="https://github.com/GustavoKehr" target="_blank">GustavoKehr</a>
+            </p>
+            <p class="contact">
+                <i class='bx bxl-discord' style='color:rgb(255, 255, 255)' ></i>
+                gustavokehr
+            </p>
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
