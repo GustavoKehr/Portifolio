@@ -504,7 +504,7 @@ span.me {
 
 /* BREAKPOINTS */
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
@@ -524,10 +524,10 @@ span.me {
     }
 }
 
-@media (max-width: 750) {
+@media (max-width: 750px) {
 
-    html, body {
-        font-size: 10%;
+    html {
+        font-size: 45%;
     }
 
     .header {
@@ -553,6 +553,6 @@ span.me {
         font-size: 2rem;
         margin: 3rem 0;
     }
-} */
+}
 
 
