@@ -226,15 +226,6 @@ section {
     transition: .5s;
 }
 
-.home-imgHover{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background-color: transparent;
-}
-
 .about {
     display: flex;
     justify-content: center;
@@ -298,6 +289,10 @@ span.me {
     margin: 2rem 0 3rem;
 }
 
+.about-content a {
+    color: var(--text-color);
+}
+
 .btn-box.btns {
     display: inline-block;
     width: 15rem;
@@ -314,7 +309,7 @@ span.me {
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 }
 
 .education .education-row {
@@ -379,7 +374,7 @@ span.me {
 }
 
 .education-content .content p {
-    margin-bottom: 2rem;
+    margin-bottom: 2.22rem;
 }
 
 .education-content .content .year {
@@ -501,12 +496,22 @@ span.me {
 .skills-column:nth-child(1) .skills-content .progress:nth-child(8) .bar span {
     width: 25%;
 }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(9) .bar span {
+    width: 25%;
+}
+
+
+
 
 /* BREAKPOINTS */
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     html {
         font-size: 55%;
+    }
+
+    span.material-symbols-outlined {
+        display: none   ;
     }
 }
 
