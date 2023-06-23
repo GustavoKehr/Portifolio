@@ -11,14 +11,15 @@
 </head>
 <body onresize="changeSize()">
     <!-- header section -->
-    <header class="header">
+    <header class="header" >
         <a href="#" class="logo">Gustavo.</a>
-        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <menu class="navbar">
+        <span class="material-symbols-outlined" id="menuabutton" onclick="clickMenu()">menu</span>
+        <menu class="navbar" id="menu">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </menu>
     </header>
@@ -177,6 +178,43 @@
             </div>
         </div>
     </section>
+
+    <!-- projects section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span class="me">Projects!</span></h2>
+        <p class="heading">Temperature <span class="me">Converter!</span></p>
+        <div class="project-temperature">
+            <section class="converter">
+                <form action="#">
+                    <p class="pad">Type the quantity before choosing the unit of measurement</p>
+                    
+                    <p class="pad">Type a number and choose one to convert</p>
+                    <label for="num">Temperature &downarrow; </label>
+                    <br>
+                    <input type="number" name="num" id="num" step="0.01" placeholder="°">
+                    <select name="opt" id="opt" onchange="convert()">
+                        <option value="default" selected>Default</option>
+                        <option value="cf">Celsius to Fahrenheit</option>
+                        <option value="ck">Celsius to Kelvin</option>
+                        <option value="fc">Fahrenheit to Celsius</option>
+                        <option value="fk">Fahrenheit to Kelvin </option>
+                        <option value="kc">Kelvin to Celsius</option>
+                        <option value="kf">Kelvin to Fahrenheit</option>
+                    </select>
+                    
+                    
+                </form>
+                <p id="resultado"></p>
+            </section>
+        </div>
+    </section>
+
+
+
+
+
+
+
     <!-- contact section -->
     <section class="about" id="contact">
         <h2 class="heading">Contact <span class="me">Me!</span></h2>

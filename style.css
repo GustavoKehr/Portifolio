@@ -59,6 +59,10 @@ body {
     font-weight: 600;
 }
 
+.navbar {
+    display: none;
+}
+
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
@@ -236,6 +240,10 @@ section {
     padding-bottom: 6rem;
 }
 
+span.me {
+    color: var(--main-color);
+}
+
 .heading {
     font-size: 5rem;
     margin-bottom: 3rem;
@@ -250,10 +258,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-span.me {
-    color: var(--main-color);
 }
 
 .about-img img {
@@ -500,8 +504,50 @@ span.me {
     width: 25%;
 }
 
+.projects {
+    background: var(--bg-color);
+}
 
+.projects .project-temperatere > section {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
 
+.projects label,select,input {
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    color: var(--text-color);
+}
+
+.projects select, input {
+    padding: 10px;
+    background: var(--second-bg-color);
+    opacity: .8;
+    border: 1px solid black;
+}
+
+.projects select {
+    color: var(--text-color);
+}
+
+.projects form {
+    margin: auto;
+    text-align: center;
+}
+
+.projects .project-temperature section p {
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2.1rem;
+}
+
+.projects .pad {
+    padding: 10px;
+    margin-bottom: 15px;
+}
 
 /* BREAKPOINTS */
 
@@ -515,11 +561,15 @@ span.me {
     }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 950px) {
     .header {
         padding: 2rem 4%;
     }
 
+    span.material-symbols-outlined {
+        display: none;
+    }
+    
     section {
         padding: 10rem 4% 2rem;
     }
@@ -529,7 +579,7 @@ span.me {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
 
     html {
         font-size: 45%;
@@ -557,6 +607,10 @@ span.me {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+    }
+
+    .projects .project-temperatere .converter label,select,input {
+        margin: 2rem;
     }
 }
 
