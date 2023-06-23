@@ -546,6 +546,10 @@ span.me {
     text-align: center;
 }
 
+.projects .space {
+    padding-top: 100px;
+}
+
 .projects .project-temperature section p {
     color: var(--text-color);
     text-align: center;
@@ -558,9 +562,8 @@ span.me {
     margin-bottom: 15px;
 }
 
-.project-temperatere .coverter {
+.project-temperatere section.coverter {
     padding-top: 0px;
-    
 }
 
 /* BREAKPOINTS */
@@ -583,9 +586,10 @@ span.me {
     }
 
     .projects > .projectall {
-        padding-top: 250px;
-        margin-bottom: -350px;
+        margin-top: -150px;
     } 
+
+    
 }
 
 @media (min-width: 950px) {
@@ -609,11 +613,10 @@ span.me {
         margin: 2rem;
     }
 
-    .projects > .projectall {
-        padding-top: 70px;
-        margin-bottom: -450px;
-    } 
     
+    .projects .projectall .project-temperatere > section.converter {
+        padding-top: 0px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -652,8 +655,7 @@ span.me {
     }
 
     .projects > .projectall {
-        padding-top: 150px;
-        margin-bottom: -350px;
+        margin-top: -150px;
     } 
 }
 
