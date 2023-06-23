@@ -59,9 +59,6 @@ body {
     font-weight: 600;
 }
 
-.navbar {
-    display: none;
-}
 
 .navbar a {
     font-size: 1.7rem;
@@ -506,7 +503,19 @@ span.me {
 
 .projects {
     background: var(--bg-color);
+    margin-bottom: 0;
+    
+} 
+
+.projects > .projectall {
+    padding-top: 150px;
+    margin-bottom: -50px;
+} 
+
+.projects .projectall {
+
 }
+
 
 .projects .project-temperatere > section {
     margin: auto;
@@ -549,6 +558,11 @@ span.me {
     margin-bottom: 15px;
 }
 
+.project-temperatere .coverter {
+    padding-top: 0px;
+    
+}
+
 /* BREAKPOINTS */
 
 @media (min-width: 1200px) {
@@ -559,6 +573,19 @@ span.me {
     span.material-symbols-outlined {
         display: none   ;
     }
+
+    menu {
+        display: block;
+    }
+
+    .projects .project-temperatere .converter label,select,input {
+        margin: 2rem;
+    }
+
+    .projects > .projectall {
+        padding-top: 250px;
+        margin-bottom: -350px;
+    } 
 }
 
 @media (min-width: 950px) {
@@ -577,6 +604,16 @@ span.me {
     .home {
         padding: 0 4%;
     }
+
+    .projects .project-temperatere .converter label,select,input {
+        margin: 2rem;
+    }
+
+    .projects > .projectall {
+        padding-top: 70px;
+        margin-bottom: -450px;
+    } 
+    
 }
 
 @media (max-width: 950px) {
@@ -594,6 +631,7 @@ span.me {
     }
 
     .navbar {
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
@@ -612,6 +650,11 @@ span.me {
     .projects .project-temperatere .converter label,select,input {
         margin: 2rem;
     }
+
+    .projects > .projectall {
+        padding-top: 150px;
+        margin-bottom: -350px;
+    } 
 }
 
 

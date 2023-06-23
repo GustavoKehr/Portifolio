@@ -1,10 +1,3 @@
-//icon navbar
-
-/* scroll sections */
-let sections = document.querySelector('section');
-let navLinks = document.querySelector('header nav a')
-let menu = document.querySelector('menu')
-let homep = document.querySelector('home')
 
 window.onscroll = () => {
     
@@ -25,11 +18,27 @@ function clickMenu() {
 
 
 function changeSize() {
+    let menu = document.querySelector('menu')
     if (window.innerWidth >= 950) {
     menu.style.display = "block"
     } else {
         menu.style.display = "none"
     }
+}
+
+window.addEventListener('load'), function() {
+    let menu = document.querySelector('menu')
+    if (window.innerWidth <= 950) {
+    document.getElementById('menu')
+    menu.style.display = 'none'
+    }
+}
+
+var menua = document.getElementById('menu');
+var menuabutton = document.getElementById('manuabutton')
+
+menuabutton.addEventListener('click'), function() {
+menua.classList.toggle('closed')
 }
 
 function convert() {
@@ -56,13 +65,3 @@ function convert() {
     console.log(result)
 }
 
-window.addEventListener('load'), function() {
-    document.getElementById('menu').style.display = 'none'
-}
-
-var menua = document.getElementById('menu');
-var menuabutton = document.getElementById('manuabutton')
-
-menuabutton.addEventListener('click'), function() {
-    menu.classList.toggle('closed')
-}
