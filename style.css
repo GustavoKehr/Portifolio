@@ -525,7 +525,7 @@ span.me {
 }
 
 .projects label,select,input {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     border-radius: 1rem;
     color: var(--text-color);
 }
@@ -631,6 +631,7 @@ span.me {
 
     #menu-icon {
         display: block;
+        margin-right: 2em;
     }
 
     .navbar {
