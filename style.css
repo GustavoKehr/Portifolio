@@ -500,6 +500,12 @@ span.me {
 .skills-column:nth-child(1) .skills-content .progress:nth-child(9) .bar span {
     width: 25%;
 }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(10) .bar span {
+    width: 25%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(11) .bar span {
+    width: 25%;
+}
 
 .projects {
     background: var(--bg-color);
@@ -510,12 +516,7 @@ span.me {
 .projects > .projectall {
     padding-top: 150px;
     margin-bottom: -50px;
-} 
-
-.projects .projectall {
-
 }
-
 
 .projects .project-temperatere > section {
     margin: auto;
